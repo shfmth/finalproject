@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nama_kawasan": "HL Waduk Cirata",
+        "fungsi_kawasan": "Hutan Lindung",
+        "status_pengelolaan": "Kawasan penyangga",
+        "provinsi": "Jawa Barat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              107.12,
+              -6.94
+            ],
+            [
+              107.52,
+              -6.94
+            ],
+            [
+              107.52,
+              -6.5
+            ],
+            [
+              107.12,
+              -6.5
+            ],
+            [
+              107.12,
+              -6.94
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama_kawasan": "HL Ungaran Timur",
+        "fungsi_kawasan": "Hutan Lindung",
+        "status_pengelolaan": "Kawasan lindung daerah",
+        "provinsi": "Jawa Tengah"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              110.2,
+              -7.36
+            ],
+            [
+              110.6,
+              -7.36
+            ],
+            [
+              110.6,
+              -6.96
+            ],
+            [
+              110.2,
+              -6.96
+            ],
+            [
+              110.2,
+              -7.36
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama_kawasan": "HL Grati Selatan",
+        "fungsi_kawasan": "Hutan Lindung",
+        "status_pengelolaan": "Kawasan penyangga industri",
+        "provinsi": "Jawa Timur"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.94,
+              -7.9
+            ],
+            [
+              113.42,
+              -7.9
+            ],
+            [
+              113.42,
+              -7.46
+            ],
+            [
+              112.94,
+              -7.46
+            ],
+            [
+              112.94,
+              -7.9
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama_kawasan": "HL Paiton Hulu",
+        "fungsi_kawasan": "Hutan Lindung",
+        "status_pengelolaan": "Kawasan lindung provinsi",
+        "provinsi": "Jawa Timur"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              113.38,
+              -7.88
+            ],
+            [
+              113.84,
+              -7.88
+            ],
+            [
+              113.84,
+              -7.52
+            ],
+            [
+              113.38,
+              -7.52
+            ],
+            [
+              113.38,
+              -7.88
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

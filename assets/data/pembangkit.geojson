@@ -1,0 +1,83 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "PLTU Suralaya",
+        "jenis": "PLTU",
+        "kapasitas_mw": 4025,
+        "provinsi": "Banten"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.949, -5.928]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "PLTA Cirata",
+        "jenis": "PLTA",
+        "kapasitas_mw": 1008,
+        "provinsi": "Jawa Barat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.321, -6.699]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "PLTGU Muara Tawar",
+        "jenis": "PLTGU",
+        "kapasitas_mw": 1850,
+        "provinsi": "Jawa Barat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.046, -6.033]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "PLTU Tanjung Jati B",
+        "jenis": "PLTU",
+        "kapasitas_mw": 2640,
+        "provinsi": "Jawa Tengah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.928, -6.444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "PLTU Paiton",
+        "jenis": "PLTU",
+        "kapasitas_mw": 4710,
+        "provinsi": "Jawa Timur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.569, -7.722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "PLTGU Grati",
+        "jenis": "PLTGU",
+        "kapasitas_mw": 860,
+        "provinsi": "Jawa Timur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.032, -7.684]
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kelas_slope": "Landai",
+        "rentang_persen": "0-8",
+        "skor": 1,
+        "deskripsi": "Topografi relatif datar di kawasan pesisir",
+        "provinsi": "Banten"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.84,
+              -6.14
+            ],
+            [
+              106.14,
+              -6.14
+            ],
+            [
+              106.14,
+              -5.84
+            ],
+            [
+              105.84,
+              -5.84
+            ],
+            [
+              105.84,
+              -6.14
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kelas_slope": "Sangat Landai",
+        "rentang_persen": "0-3",
+        "skor": 1,
+        "deskripsi": "Dataran pantai dan tambak",
+        "provinsi": "Jawa Barat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.9,
+              -6.16
+            ],
+            [
+              107.16,
+              -6.16
+            ],
+            [
+              107.16,
+              -5.94
+            ],
+            [
+              106.9,
+              -5.94
+            ],
+            [
+              106.9,
+              -6.16
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kelas_slope": "Curam",
+        "rentang_persen": "25-40",
+        "skor": 4,
+        "deskripsi": "Perbukitan sekitar waduk dan tebing",
+        "provinsi": "Jawa Barat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              107.18,
+              -6.86
+            ],
+            [
+              107.46,
+              -6.86
+            ],
+            [
+              107.46,
+              -6.56
+            ],
+            [
+              107.18,
+              -6.56
+            ],
+            [
+              107.18,
+              -6.86
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kelas_slope": "Bergelombang",
+        "rentang_persen": "8-15",
+        "skor": 2,
+        "deskripsi": "Perbukitan rendah pesisir utara",
+        "provinsi": "Jawa Tengah"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              110.74,
+              -6.58
+            ],
+            [
+              111.1,
+              -6.58
+            ],
+            [
+              111.1,
+              -6.28
+            ],
+            [
+              110.74,
+              -6.28
+            ],
+            [
+              110.74,
+              -6.58
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kelas_slope": "Landai",
+        "rentang_persen": "0-8",
+        "skor": 1,
+        "deskripsi": "Dataran industri pesisir",
+        "provinsi": "Jawa Timur"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.5,
+              -7.28
+            ],
+            [
+              112.82,
+              -7.28
+            ],
+            [
+              112.82,
+              -7.02
+            ],
+            [
+              112.5,
+              -7.02
+            ],
+            [
+              112.5,
+              -7.28
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kelas_slope": "Agak Curam",
+        "rentang_persen": "15-25",
+        "skor": 3,
+        "deskripsi": "Kaki lereng sekitar kompleks pembangkit",
+        "provinsi": "Jawa Timur"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.92,
+              -7.84
+            ],
+            [
+              113.72,
+              -7.84
+            ],
+            [
+              113.72,
+              -7.54
+            ],
+            [
+              112.92,
+              -7.54
+            ],
+            [
+              112.92,
+              -7.84
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
