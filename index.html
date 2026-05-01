@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebGIS Kelistrikan Daerah Istimewa Yogyakarta</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="eyebrow">Site Analysis Dashboard</span>
+        <h1>WebGIS Kelistrikan Daerah Istimewa Yogyakarta</h1>
+        <p>
+          WebGIS untuk menghimpun parameter kelistrikan, tata ruang, lingkungan,
+          dan kebencanaan ke dalam satu proses <strong>buffer</strong> dan <strong>clip.</strong>
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">Popup Koordinat di Peta</span>
+          <span class="hero-tag">Buffer &amp; Clip</span>
+          <span class="hero-tag">Output ZIP (.geojson)</span>
+        </div>
+      </div>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Layer Aktif</h2>
+            <p class="panel-note">Hanya layer yang dicentang yang ikut dihimpun ke hasil clip.</p>
+          </div>
+          <div class="panel-actions-inline">
+            <button id="btnEnableAllLayers" class="btn btn-ghost btn-mini" type="button">Aktifkan Semua</button>
+            <button id="btnRestoreDefaultLayers" class="btn btn-ghost btn-mini" type="button">Default</button>
+          </div>
+        </div>
+        <div id="layerList" class="layer-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Buffer &amp; Clip Site</h2>
+
+        <div class="form-group">
+          <label for="bufferKm">Jarak buffer (km)</label>
+          <div class="inline-actions">
+            <input id="bufferKm" type="number" min="0" step="0.1" value="10" />
+            <button id="btnBufferShape" class="btn btn-primary" type="button">Jalankan Buffer</button>
+          </div>
+        </div>
+
+        <div class="tool-hint">
+          <p><strong>Cara pakai:</strong></p>
+          <ol>
+            <li>Klik tombol <strong>Site via Koordinat</strong> di dalam peta untuk memasukkan lokasi dengan koordinat atau gambar titik/garis/polygon langsung dari toolbar.</li>
+            <li>Isi jarak buffer (Isi <strong>0 km</strong> jika shape area ingin dipakai langsung sebagai area clip)</li>
+            <li>Klik <em>Analisis dari Koordinat</em> di pop-up peta atau <em>Jalankan Buffer</em> untuk menghimpun layer di sekitar site.</li>
+            <li>Unduh paket ZIP hasil clip dan lanjutkan analisis di ArcGIS.</li>
+          </ol>
+        </div>
+
+        <div class="action-stack">
+          <button id="btnResetAnalysis" class="btn btn-danger" type="button">Ulangi Analisis</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Status</h2>
+        <div id="statusBox" class="status-box info">
+          Sistem siap. Muat layer, lalu tentukan site dari popup koordinat pada peta atau dari toolbar gambar sebelum menjalankan buffer.
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Ringkasan Hasil</h2>
+        <div id="resultSummary" class="summary-box">
+          Belum ada hasil analisis.
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Tabel Atribut Hasil</h2>
+        <div id="resultTable" class="result-table-empty">
+          Jalankan analisis untuk menampilkan atribut fitur pada hasil clip.
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Unduh Hasil Clip</h2>
+        <div class="action-stack">
+          <button id="btnDownloadPackage" class="btn btn-success" type="button">Download ZIP (.geojson)</button>
+          <button id="btnDownloadCSV" class="btn btn-success-outline" type="button">Download CSV</button>
+        </div>
+      </section>
+    </aside>
+
+    <main class="map-wrapper">
+      <div class="map-topbar">
+        <div class="map-topbar-copy">
+          <strong>Peta Interaktif Site Analysis</strong>
+          <span>
+            Analisis kini dimulai dari tombol Site via Koordinat di dalam peta agar lebih mudah dipahami pengguna awam.
+            Layer seperti RTRW, slope, LSD, WIUP, hutan lindung, rawan banjir, pergerakan tanah, dan likuefaksi siap digunakan
+            untuk simulasi buffer dan clip.
+          </span>
+        </div>
+        <div class="topbar-callout">
+          Sesuaikan tampilan satelit untuk membaca hasil analisis lokasi sebelum menjalankan buffer dan mengunduh hasil clip.
+        </div>
+      </div>
+
+      <div class="map-stage">
+        <div id="map"></div>
+        <div id="sitePopupMount" class="map-overlay-host"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+  <script src="https://unpkg.com/@turf/turf@7.2.0/turf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
